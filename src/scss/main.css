@@ -3,7 +3,6 @@ main {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,4 +32,15 @@ main {
 
 .nav-link:active {
   color: #363636;
+}
+
+.card__coding {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
