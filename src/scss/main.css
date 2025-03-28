@@ -1,0 +1,36 @@
+main {
+  margin-top: 50px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #525252;
+  gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 100px;
+  z-index: 1000;
+}
+.header__clear {
+  margin-left: auto;
+  border: #b6b6b6 solid 2px;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  transition-property: color;
+  transition-duration: 250ms;
+}
+
+.nav-link:hover {
+  color: #b8b8b8;
+}
+
+.nav-link:active {
+  color: #363636;
+}/*# sourceMappingURL=main.css.map */
