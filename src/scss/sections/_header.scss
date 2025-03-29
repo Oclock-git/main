@@ -1,3 +1,6 @@
+main {
+	margin-top: 50px;
+}
 .header {
 	position: fixed;
 	top: 0;
@@ -10,13 +13,18 @@
 	gap: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-bottom: 100px;
+	// margin-bottom: 100px;
 	z-index: 1000;
+
 	&__clear {
 		margin-left: auto;
 		border: #b6b6b6 solid 2px;
 	}
 }
+
+// .header {
+// 	opacity: 1;
+// }
 
 .nav-link {
 	color: #f0f0f0;
@@ -29,4 +37,12 @@
 }
 .nav-link:active {
 	color: #363636;
+}
+.header__isHidden {
+	opacity: 0.1;
+	margin-bottom: 1px;
+}
+
+.main-ishiden {
+	margin-top: 1px;
 }

@@ -18,11 +18,11 @@
 		/>
 
 		<link rel="stylesheet" href="./src/scss/main.css" />
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="./icon.svg" type="image/x-icon" />
 	</head>
 	<!-- body -->
 	<body>
-		<header class="header">
+		<header class="header" id="header">
 			<img
 				src="./src/assets/img/logo.png"
 				alt="logo"
@@ -31,10 +31,13 @@
 			/>
 			<a href="#" class="nav-link">home</a>
 			<a href="#" class="nav-link">o'clocks</a>
-			<button type="button" class="header__clear btn">clear header</button>
+			<button type="button" class="header__clear btn" id="btnClear">
+				clear header
+			</button>
 		</header>
+
 		<!-- MAIN -->
-		<main>
+		<main id="main">
 			<div class="card__coding">
 				<img
 					src="./src/assets/img/codingo'clock.png"

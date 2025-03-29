@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite App</title>
+		<title>oclock.git/codingo'clock</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,13 +17,13 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../icon.svg" type="image/x-icon" />
 
 		<link rel="stylesheet" href="./src/style.css" />
 		<link rel="stylesheet" href="../src/scss/main.css" />
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" id="header">
 			<img
 				src="../src/assets/img/logo.png"
 				alt="logo"
@@ -32,9 +32,11 @@
 			/>
 			<a href="../index.html" class="nav-link">home</a>
 			<a href="#" class="nav-link">o'clocks</a>
-			<button type="button" class="header__clear btn">clear header</button>
+			<button type="button" class="header__clear btn" id="btnClear">
+				clear header
+			</button>
 		</header>
-		<main>
+		<main id="main">
 			<p class="title">Clock.js</p>
 			<div class="icon"></div>
 			<div class="maindiv">
@@ -51,7 +53,9 @@
 							<span style="color: rgb(199, 80, 80)"> hour</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(218, 149, 0)" id="hourJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -59,7 +63,9 @@
 							<span style="color: rgb(199, 80, 80)"> minute</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(218, 149, 0)" id="minuteJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -67,7 +73,9 @@
 							<span style="color: rgb(199, 80, 80)"> second</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(218, 149, 0)" id="secondJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -75,7 +83,9 @@
 							<span style="color: rgb(199, 80, 80)"> period</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(142, 197, 125)" id="periodJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -83,7 +93,9 @@
 							<span style="color: rgb(199, 80, 80)"> day</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(218, 149, 0)" id="dayJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -91,7 +103,9 @@
 							<span style="color: rgb(199, 80, 80)"> month</span
 							><span style="color: rgb(0, 155, 194)">: </span
 							><span style="color: rgb(142, 197, 125)" id="monthJs"></span>
-							<span style="color: rgb(161, 161, 161)">,</span>
+							<span style="color: rgb(161, 161, 161); margin-left: -15px"
+								>,</span
+							>
 						</p>
 					</li>
 					<li class="textes" style="margin-left: 65px">
@@ -109,7 +123,7 @@
 				</ul>
 			</div>
 		</main>
-
+		<script src="../src/js/main.js"></script>
 		<script type="module" src="./src/main.js"></script>
 	</body>
 </html>
