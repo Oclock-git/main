@@ -6,12 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>oclock.git/main</title>
 		<!-- links -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -27,36 +24,138 @@
 				src="./src/assets/img/logo.png"
 				alt="logo"
 				width="50px"
-				height="45px"
+				height="50px"
+				class="header__logo"
 			/>
-			<a href="#" class="nav-link">home</a>
-			<a href="#" class="nav-link">o'clocks</a>
-			<button type="button" class="header__clear btn" id="btnClear">
-				clear header
-			</button>
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="#" class="header__link">Home</a>
+				</li>
+				<li class="header__item"><button type="button" class="header__link nthchillink">o'clock</button></li>
+			</ul>
+			
+			<!-- svg button "themes" -->
+			<nav class="header__nav">
+				<ul class="header__buttonslist">
+					<li class="header__navitem">
+						<button type="button" class="header__languagebtn">Eng</button>
+					</li>
+					<li class="header__navitem">
+						<button type="button" class="header__theme">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 11 11"
+								fill="none"
+							>
+								<g clip-path="url(#clip0_10_41)">
+									<path
+										d="M5.49996 10.0833C8.03126 10.0833 10.0833 8.03131 10.0833 5.50001C10.0833 2.9687 8.03126 0.916672 5.49996 0.916672C2.96865 0.916672 0.916626 2.9687 0.916626 5.50001C0.916626 8.03131 2.96865 10.0833 5.49996 10.0833Z"
+										fill="#FFFF00"
+									/>
+									<path
+										d="M3.84997 5.28C4.33598 5.28 4.72997 4.88601 4.72997 4.4C4.72997 3.91399 4.33598 3.52 3.84997 3.52C3.36396 3.52 2.96997 3.91399 2.96997 4.4C2.96997 4.88601 3.36396 5.28 3.84997 5.28Z"
+										fill="#FFFFCE"
+									/>
+									<path
+										d="M6.59994 7.81001C6.96445 7.81001 7.25994 7.51451 7.25994 7.15001C7.25994 6.7855 6.96445 6.49001 6.59994 6.49001C6.23543 6.49001 5.93994 6.7855 5.93994 7.15001C5.93994 7.51451 6.23543 7.81001 6.59994 7.81001Z"
+										fill="#AFAF23"
+									/>
+									<path
+										d="M7.70002 3.85C8.00378 3.85 8.25002 3.60376 8.25002 3.3C8.25002 2.99624 8.00378 2.75 7.70002 2.75C7.39627 2.75 7.15002 2.99624 7.15002 3.3C7.15002 3.60376 7.39627 3.85 7.70002 3.85Z"
+										fill="#C8C845"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_10_41">
+										<rect width="11" height="11" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</li>
+					<!-- settings menu -->
+					<li class="header__navitem">
+					<button type="button" class="header__settingsbtn">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="26"
+							height="18"
+							viewBox="0 0 13 9"
+							fill="none"
+						>
+							<rect y="1" width="13" height="1" rx="0.5" fill="#4A4A4A" />
+							<rect
+								x="2"
+								y="3"
+								width="3"
+								height="1"
+								rx="0.5"
+								transform="rotate(-90 2 3)"
+								fill="#4A4A4A"
+							/>
+							<rect
+								x="9"
+								y="6"
+								width="3"
+								height="1"
+								rx="0.5"
+								transform="rotate(-90 9 6)"
+								fill="#4A4A4A"
+							/>
+							<rect
+								x="6"
+								y="9"
+								width="3"
+								height="1"
+								rx="0.5"
+								transform="rotate(-90 6 9)"
+								fill="#4A4A4A"
+							/>
+							<rect y="4" width="13" height="1" rx="0.5" fill="#4A4A4A" />
+							<rect y="7" width="13" height="1" rx="0.5" fill="#4A4A4A" />
+						</svg>
+						</li>
+						<li class="header__navitem">
+					</button>
+					<button type="button" id="btnClear" class="header__clear">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="13"
+							height="13"
+							viewBox="0 0 13 13"
+							fill="none"
+						>
+							<rect
+								width="2.04275"
+								height="16.342"
+								rx="1.02138"
+								transform="matrix(0.707108 -0.707106 0.707108 0.707106 0 1.44444)"
+								fill="#4E4E4E"
+							/>
+							<rect
+								width="2.04275"
+								height="16.342"
+								rx="1.02138"
+								transform="matrix(0.707108 0.707106 -0.707108 0.707106 11.5555 1.52588e-05)"
+								fill="#4E4E4E"
+							/>
+						</svg>
+					</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
+		<!-- button that clears header -->
+		<!-- <button type="button" class="header__clear btn" id="btnClear">
+				clear header
+			</button> -->
 
 		<!-- MAIN -->
-		<main id="main">
-			<div class="card__coding">
-				<img
-					src="./src/assets/img/codingo'clock.png"
-					alt="coding"
-					width="300px"
-				/>
-				<a href="./pages/index.html">link</a>
-				<a href="https://windybindy.github.io/time/"
-					>dop link (if on first link bugs)</a
-				>
-			</div>
-		</main>
+		<main id="main"></main>
 
 		<!-- scripts! -->
 		<script type="module" src="./src/js/main.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
 	</body>
 </html>
