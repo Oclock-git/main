@@ -1,7 +1,11 @@
 const btnClear = document.getElementById('btnClear')
 const header = document.getElementById('header')
 const main = document.getElementById('main')
-
+const headerBackBtn = document.getElementById('headerbackBtn')
+const menulanguage = document.getElementById('menulanguage')
+headerBackBtn.onclick = function () {
+	header.classList.remove('header__isHidden')
+}
 const body = document.getElementById('body')
 const menuHeader = document.getElementById('header-menu')
 

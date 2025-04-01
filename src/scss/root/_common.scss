@@ -1,5 +1,5 @@
 body {
-	background-color: $back-groundcolor;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,6 +9,9 @@ body {
 	position: relative;
 }
 
+.body-dark {
+	background-color: #4a4a4a;
+}
 html,
 body {
 	// overflow-y: auto;

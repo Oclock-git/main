@@ -1,19 +1,6 @@
 main {
 	transition: all 0.2s ease-in-out;
 }
-.body {
-	$header-white: red;
-	// $header-dark: #7b7b7b;
-	$header-link: #353535;
-	$back-groundcolor: #fff;
-}
-.body-dark {
-	$header-white: #7b7b7b;
-	// $header-dark: #7b7b7b;
-	$header-link: #353535;
-
-	$back-groundcolor: #424242;
-}
 
 .header {
 	transition: 0.4s;
@@ -37,7 +24,13 @@ main {
 	transform: skewX(-20deg);
 	position: relative;
 	&__back {
-		position: absolute;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		border-radius: 5px;
+		border: #000000 solid 1px;
+		background-color: $header-dark;
+		color: #e2e2e2;
 	}
 	&__list {
 		display: flex;
@@ -208,9 +201,9 @@ main {
 }
 
 //DARK THEME
-// .header-dark {
-// 	background-color: ;
-// }
+.header-dark {
+	background-color: $header-dark;
+}
 
 .nthchillink-dark {
 	color: #353535;
@@ -218,4 +211,12 @@ main {
 
 .header-dark-link:hover {
 	color: #555555;
+}
+
+.rotet-ttr {
+	transition: 0.3s;
+}
+
+.rotet-ttr-active {
+	transform: rotate(180deg);
 }

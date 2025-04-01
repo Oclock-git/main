@@ -80,8 +80,8 @@
 						</svg>
 						</li>
 					<li class="header__navitem">
-						<button type="button" class="header__languagebtn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 12 12" fill="#4A4A4A" class="rotet-ttr" id="roteasa">
+						<button type="button" class="header__languagebtn" id="languegeBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 12 12" fill="#4A4A4A" >
 <g clip-path="url(#clip0_43_42)">
 <path d="M4.446 5.4L5.79 6.744L5.292 7.944L3.6 6.24L1.62 8.22L0.78 7.368L2.748 5.4L2.22 4.872C1.902 4.554 1.62 4.092 1.44 3.6H2.76C2.85 3.768 2.958 3.918 3.066 4.02L3.6 4.56L4.128 4.032C4.488 3.66 4.8 2.904 4.8 2.4H0V1.2H3V0H4.2V1.2H7.2V2.4H6C6 3.222 5.556 4.29 4.98 4.872L4.44 5.4H4.446ZM6.75 10.2L6 12H4.8L7.8 4.8H9L12 12H10.8L10.05 10.2H6.75ZM7.248 9H9.552L8.4 6.24L7.248 9Z" fill="#606060"/>
 </g>
@@ -91,7 +91,7 @@
 </clipPath>
 </defs>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 7 7" fill="#4A4A4A" class="rotet-ttr" id="roteasa">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 7 7" fill="#4A4A4A" class="rotet-ttr" id="rotetIco">
 <path d="M1.96865 3.9375C2.02955 3.9375 2.09013 3.96278 2.13337 4.0122L3.5 5.57406L4.86663 4.0122C4.94617 3.92129 5.08439 3.91206 5.1753 3.99163C5.26621 4.07118 5.27543 4.20938 5.19587 4.3003L3.66462 6.0503C3.62309 6.09777 3.56308 6.125 3.5 6.125C3.43692 6.125 3.37691 6.09777 3.33538 6.0503L1.80413 4.3003C1.72457 4.20938 1.73377 4.07118 1.8247 3.99163C1.8662 3.95531 1.91755 3.9375 1.96865 3.9375Z" fill="#606060"/>
 </svg>
 						</button>
@@ -163,6 +163,7 @@
 					</button>
 					</li>
 				</ul>
+				
 				<div class="menu__settingHiden" id="header-menu">
 				<button type="button" id="btnClearMenu" class="header__menuclear">
 						<svg
@@ -203,7 +204,9 @@
 					<div class="menu__rgb" id="menuRgb-red"></div>
 					<div class="menu__rgb" id="menuRgb-red"></div>
 					<div class="menu__rgb" id="menuRgb-red"></div>
+					
 			</div>
+			
 			</nav>
 			
 		</header>
@@ -214,10 +217,12 @@
 
 		<!-- MAIN -->
 		<main id="main">
-			<button class="header__back">header back</button>
+			<button class="header__back" id="headerbackBtn"> header back</button>
 		</main>
 
 		<!-- scripts! -->
+		<script type="module" src="./src/js/translate.js"></script>
 		<script type="module" src="./src/js/main.js"></script>
+		
 	</body>
 </html>
