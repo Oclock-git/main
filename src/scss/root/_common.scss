@@ -1,7 +1,18 @@
 body {
-	background-color: #fff;
+	background-color: $back-groundcolor;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 12px;
+	transition: 0.4s;
+	flex-direction: column;
+	position: relative;
+}
+
+html,
+body {
+	// overflow-y: auto;
+	// overflow: hidden;
+	// margin: 0;
+	// padding: 0;
 }

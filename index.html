@@ -18,7 +18,7 @@
 		<link rel="shortcut icon" href="./icon.svg" type="image/x-icon" />
 	</head>
 	<!-- body -->
-	<body>
+	<body id="body" class="body">
 		<header class="header" id="header">
 			<img
 				src="./src/assets/img/logo.png"
@@ -31,53 +31,15 @@
 				<li class="header__item">
 					<a href="#" class="header__link">Home</a>
 				</li>
-				<li class="header__item"><button type="button" class="header__link nthchillink">o'clock</button></li>
+				<li class="header__item"><button type="button" class="header__link nthchillink" id="nth-child">o'clock</button></li>
 			</ul>
 			
 			<!-- svg button "themes" -->
 			<nav class="header__nav">
 				<ul class="header__buttonslist">
-					<li class="header__navitem">
-						<button type="button" class="header__languagebtn">Eng</button>
-					</li>
-					<li class="header__navitem">
-						<button type="button" class="header__theme">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="20"
-								height="20"
-								viewBox="0 0 11 11"
-								fill="none"
-							>
-								<g clip-path="url(#clip0_10_41)">
-									<path
-										d="M5.49996 10.0833C8.03126 10.0833 10.0833 8.03131 10.0833 5.50001C10.0833 2.9687 8.03126 0.916672 5.49996 0.916672C2.96865 0.916672 0.916626 2.9687 0.916626 5.50001C0.916626 8.03131 2.96865 10.0833 5.49996 10.0833Z"
-										fill="#FFFF00"
-									/>
-									<path
-										d="M3.84997 5.28C4.33598 5.28 4.72997 4.88601 4.72997 4.4C4.72997 3.91399 4.33598 3.52 3.84997 3.52C3.36396 3.52 2.96997 3.91399 2.96997 4.4C2.96997 4.88601 3.36396 5.28 3.84997 5.28Z"
-										fill="#FFFFCE"
-									/>
-									<path
-										d="M6.59994 7.81001C6.96445 7.81001 7.25994 7.51451 7.25994 7.15001C7.25994 6.7855 6.96445 6.49001 6.59994 6.49001C6.23543 6.49001 5.93994 6.7855 5.93994 7.15001C5.93994 7.51451 6.23543 7.81001 6.59994 7.81001Z"
-										fill="#AFAF23"
-									/>
-									<path
-										d="M7.70002 3.85C8.00378 3.85 8.25002 3.60376 8.25002 3.3C8.25002 2.99624 8.00378 2.75 7.70002 2.75C7.39627 2.75 7.15002 2.99624 7.15002 3.3C7.15002 3.60376 7.39627 3.85 7.70002 3.85Z"
-										fill="#C8C845"
-									/>
-								</g>
-								<defs>
-									<clipPath id="clip0_10_41">
-										<rect width="11" height="11" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
-						</button>
-					</li>
 					<!-- settings menu -->
 					<li class="header__navitem">
-					<button type="button" class="header__settingsbtn">
+					<button type="button" class="header__settingsbtn" id="sttings-menu">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="26"
@@ -117,6 +79,62 @@
 							<rect y="7" width="13" height="1" rx="0.5" fill="#4A4A4A" />
 						</svg>
 						</li>
+					<li class="header__navitem">
+						<button type="button" class="header__languagebtn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 12 12" fill="#4A4A4A" class="rotet-ttr" id="roteasa">
+<g clip-path="url(#clip0_43_42)">
+<path d="M4.446 5.4L5.79 6.744L5.292 7.944L3.6 6.24L1.62 8.22L0.78 7.368L2.748 5.4L2.22 4.872C1.902 4.554 1.62 4.092 1.44 3.6H2.76C2.85 3.768 2.958 3.918 3.066 4.02L3.6 4.56L4.128 4.032C4.488 3.66 4.8 2.904 4.8 2.4H0V1.2H3V0H4.2V1.2H7.2V2.4H6C6 3.222 5.556 4.29 4.98 4.872L4.44 5.4H4.446ZM6.75 10.2L6 12H4.8L7.8 4.8H9L12 12H10.8L10.05 10.2H6.75ZM7.248 9H9.552L8.4 6.24L7.248 9Z" fill="#606060"/>
+</g>
+<defs>
+<clipPath id="clip0_43_42">
+<rect width="12" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 7 7" fill="#4A4A4A" class="rotet-ttr" id="roteasa">
+<path d="M1.96865 3.9375C2.02955 3.9375 2.09013 3.96278 2.13337 4.0122L3.5 5.57406L4.86663 4.0122C4.94617 3.92129 5.08439 3.91206 5.1753 3.99163C5.26621 4.07118 5.27543 4.20938 5.19587 4.3003L3.66462 6.0503C3.62309 6.09777 3.56308 6.125 3.5 6.125C3.43692 6.125 3.37691 6.09777 3.33538 6.0503L1.80413 4.3003C1.72457 4.20938 1.73377 4.07118 1.8247 3.99163C1.8662 3.95531 1.91755 3.9375 1.96865 3.9375Z" fill="#606060"/>
+</svg>
+						</button>
+					</li>
+					<li class="header__navitem">
+						<!-- <button type="button" class="header__theme">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 11 11"
+								fill="none"
+							>
+								<g clip-path="url(#clip0_10_41)">
+									<path
+										d="M5.49996 10.0833C8.03126 10.0833 10.0833 8.03131 10.0833 5.50001C10.0833 2.9687 8.03126 0.916672 5.49996 0.916672C2.96865 0.916672 0.916626 2.9687 0.916626 5.50001C0.916626 8.03131 2.96865 10.0833 5.49996 10.0833Z"
+										fill="#FFFF00"
+									/>
+									<path
+										d="M3.84997 5.28C4.33598 5.28 4.72997 4.88601 4.72997 4.4C4.72997 3.91399 4.33598 3.52 3.84997 3.52C3.36396 3.52 2.96997 3.91399 2.96997 4.4C2.96997 4.88601 3.36396 5.28 3.84997 5.28Z"
+										fill="#FFFFCE"
+									/>
+									<path
+										d="M6.59994 7.81001C6.96445 7.81001 7.25994 7.51451 7.25994 7.15001C7.25994 6.7855 6.96445 6.49001 6.59994 6.49001C6.23543 6.49001 5.93994 6.7855 5.93994 7.15001C5.93994 7.51451 6.23543 7.81001 6.59994 7.81001Z"
+										fill="#AFAF23"
+									/>
+									<path
+										d="M7.70002 3.85C8.00378 3.85 8.25002 3.60376 8.25002 3.3C8.25002 2.99624 8.00378 2.75 7.70002 2.75C7.39627 2.75 7.15002 2.99624 7.15002 3.3C7.15002 3.60376 7.39627 3.85 7.70002 3.85Z"
+										fill="#C8C845"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_10_41">
+										<rect width="11" height="11" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button> -->
+						<button class="switch-btn" id="switch">
+        <div class="circle"></div>
+    </button>
+					</li>
+					
 						<li class="header__navitem">
 					</button>
 					<button type="button" id="btnClear" class="header__clear">
@@ -145,7 +163,49 @@
 					</button>
 					</li>
 				</ul>
+				<div class="menu__settingHiden" id="header-menu">
+				<button type="button" id="btnClearMenu" class="header__menuclear">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="13"
+							height="13"
+							viewBox="0 0 13 13"
+							fill="none"
+						>
+							<rect
+								width="2.04275"
+								height="16.342"
+								rx="1.02138"
+								transform="matrix(0.707108 -0.707106 0.707108 0.707106 0 1.44444)"
+								fill="#4E4E4E"
+							/>
+							<rect
+								width="2.04275"
+								height="16.342"
+								rx="1.02138"
+								transform="matrix(0.707108 0.707106 -0.707108 0.707106 11.5555 1.52588e-05)"
+								fill="#4E4E4E"
+							/>
+						</svg>
+					</button>
+					<p><span>R</span><span>G</span>B</p>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+					<div class="menu__rgb" id="menuRgb-red"></div>
+			</div>
 			</nav>
+			
 		</header>
 		<!-- button that clears header -->
 		<!-- <button type="button" class="header__clear btn" id="btnClear">
@@ -153,7 +213,9 @@
 			</button> -->
 
 		<!-- MAIN -->
-		<main id="main"></main>
+		<main id="main">
+			<button class="header__back">header back</button>
+		</main>
 
 		<!-- scripts! -->
 		<script type="module" src="./src/js/main.js"></script>
